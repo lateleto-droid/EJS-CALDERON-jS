@@ -10,9 +10,9 @@ interface LogoProps {
 
 export function Logo({ size = 'md', className }: LogoProps) {
   const sizeClasses = {
-    sm: 'h-20 w-[320px] md:h-28 md:w-[500px]',
-    md: 'h-32 w-[550px]',
-    lg: 'h-40 w-[800px]',
+    sm: 'h-16 w-[220px] sm:h-20 sm:w-[280px] md:h-24 md:w-[380px]',
+    md: 'h-24 w-[300px] md:h-32 md:w-[450px]',
+    lg: 'h-32 w-[350px] md:h-40 md:w-[600px]',
   };
 
   return (
@@ -21,8 +21,8 @@ export function Logo({ size = 'md', className }: LogoProps) {
         src="/logo-black.png.png"
         alt="EJS Calderon Construction LLC"
         fill
-        sizes="(max-width: 768px) 400px, 800px"
-        className="object-contain object-left mix-blend-screen contrast-125 brightness-110 scale-[1.35] origin-left"
+        sizes="(max-width: 768px) 300px, 600px"
+        className="object-contain object-left mix-blend-screen contrast-125 brightness-110 scale-[1.25] origin-left"
         priority
       />
     </div>

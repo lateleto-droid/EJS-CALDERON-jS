@@ -47,7 +47,7 @@ export function Navbar() {
       {/* Main Nav */}
       <nav
         className={cn(
-          'fixed w-full z-40 transition-all duration-300 flex flex-col justify-center h-28 md:h-36',
+          'fixed w-full z-40 transition-all duration-300 flex flex-col justify-center h-24 md:h-32',
           scrolled || isOpen
             ? 'bg-jet/95 backdrop-blur-md shadow-lg text-white border-b border-white/10'
             : 'bg-jet/95 sm:bg-transparent text-white border-b border-white/10 sm:border-transparent' // default assuming hero has dark overlay
