@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import logoImg from '../public/logo.png';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
@@ -18,12 +19,13 @@ export function Logo({ size = 'md', className }: LogoProps) {
   return (
     <div className={cn('relative', sizeClasses[size], className)}>
       <Image
-        src="/logo.png"
+        src={logoImg}
         alt="EJS Calderon Construction LLC"
         fill
         sizes="(max-width: 768px) 300px, 600px"
         className="object-contain object-left scale-[1.25] origin-left"
         priority
+        unoptimized
       />
     </div>
   );

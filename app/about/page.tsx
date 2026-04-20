@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { PageHero } from '@/components/page-hero';
 import { CtaBanner } from '@/components/sections/cta-banner';
 import { AnimatedSection } from '@/components/animated-section';
-import { teamMembers } from '@/lib/data';
 import { Target, Eye, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -75,41 +74,6 @@ export default function AboutPage() {
                 <card.icon size={48} className="text-brand mx-auto mb-6" />
                 <h3 className="text-2xl font-bold font-heading text-jet mb-4">{card.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{card.desc}</p>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-16">
-            <span className="text-brand font-bold text-sm uppercase tracking-widest mb-4 block">Our Experts</span>
-            <h2 className="text-4xl sm:text-5xl font-heading font-black text-jet leading-tight">
-              Meet the Team
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {teamMembers.map((member, idx) => (
-              <AnimatedSection key={member.name} animation="fade-up" delay={idx * 100} className="group">
-                <div className="relative h-96 rounded-xl overflow-hidden mb-6">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-jet/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-6 pb-8">
-                    {/* Could add social links here if needed */}
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold font-heading text-jet">{member.name}</h3>
-                  <p className="text-brand font-semibold text-sm uppercase tracking-wider mt-1 mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </div>
               </AnimatedSection>
             ))}
           </div>
