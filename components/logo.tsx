@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import logoImg from '../public/logo.png';
+import logoImg from '../public/logo.jpg';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
