@@ -18,7 +18,7 @@ export function Logo({ size = 'md', className }: LogoProps) {
   return (
     <div className={cn('relative', sizeClasses[size], className)}>
       <Image
-        src="/logo.jpg"
+        src="/logo.png"
         alt="EJS Calderon Construction LLC"
         fill
         sizes="(max-width: 768px) 300px, 600px"
