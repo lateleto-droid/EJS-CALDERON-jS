@@ -18,11 +18,11 @@ export function Logo({ size = 'md', className }: LogoProps) {
   return (
     <div className={cn('relative', sizeClasses[size], className)}>
       <Image
-        src="/logo-black.png.png"
+        src="/logo.jpg"
         alt="EJS Calderon Construction LLC"
         fill
         sizes="(max-width: 768px) 300px, 600px"
-        className="object-contain object-left mix-blend-screen contrast-125 brightness-110 scale-[1.25] origin-left"
+        className="object-contain object-left scale-[1.25] origin-left"
         priority
       />
     </div>
